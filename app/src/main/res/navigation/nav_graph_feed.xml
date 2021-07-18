@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_feed"
+    app:startDestination="@id/feedFragment2">
+
+    <fragment
+        android:id="@+id/feedFragment2"
+        android:name="ru.agladkov.jetpacknavigationdemo.screens.FeedFragment"
+        android:label="FeedFragment" >
+        <action
+            android:id="@+id/action_feedFragment2_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="ru.agladkov.jetpacknavigationdemo.screens.DetailFragment"
+        android:label="DetailFragment" />
+</navigation>

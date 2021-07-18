@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_main.xml"
+    app:startDestination="@id/navigation2">
+
+    <fragment
+        android:id="@+id/likesFragment"
+        android:name="ru.agladkov.jetpacknavigationdemo.screens.LikesFragment"
+        android:label="LikesFragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="ru.agladkov.jetpacknavigationdemo.screens.SettingsFragment"
+        android:label="SettingsFragment" />
+    <navigation
+        android:id="@+id/navigation2"
+        app:startDestination="@id/feedFragment">
+        <fragment
+            android:id="@+id/detailFragment2"
+            android:name="ru.agladkov.jetpacknavigationdemo.screens.DetailFragment"
+            android:label="DetailFragment" />
+        <fragment
+            android:id="@+id/feedFragment"
+            android:name="ru.agladkov.jetpacknavigationdemo.screens.FeedFragment"
+            android:label="FeedFragment">
+            <action
+                android:id="@+id/action_feedFragment_to_detailFragment2"
+                app:destination="@id/detailFragment2" />
+        </fragment>
+    </navigation>
+</navigation>

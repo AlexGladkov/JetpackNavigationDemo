@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">JetpackNavigationDemo</string>
+    <string name="splash_fragment">Splash</string>
+    <string name="login_fragment">Login</string>
+    <string name="main_fragment">Main</string>
+    <string name="title_feed">Лента</string>
+    <string name="title_like">Избранное</string>
+    <string name="title_settings">Настройки</string>
+    <string name="title_detail">Detail</string>
+</resources>
