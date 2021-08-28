@@ -18,12 +18,16 @@ class DetailFragment : Fragment(R.layout.fragment_detail) {
 
         view.findViewById<TextView>(R.id.detailTextView).text = count.toString()
         view.findViewById<TextView>(R.id.detailTextView).setOnClickListener {
-            findNavController().navigate(
-                R.id.action_detailFragment_self,
-                bundleOf(
-                    COUNT_KEY to (count + 1)
+            if (count > 1) {
+                findNavController().navigate(R.id.action_detailFragment_to_reviewsFragment)
+            } else {
+                findNavController().navigate(
+                    R.id.action_detailFragment_self,
+                    bundleOf(
+                        COUNT_KEY to (count + 1)
+                    )
                 )
-            )
+            }
         }
     }
 

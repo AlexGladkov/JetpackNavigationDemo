@@ -13,6 +13,14 @@
             app:destination="@id/detailFragment" />
 
         <deepLink app:uri="jetnavapp://detail" />
+        <action
+            android:id="@+id/action_detailFragment_to_reviewsFragment"
+            app:destination="@id/reviewsFragment" />
 
     </fragment>
+
+    <fragment
+        android:id="@+id/reviewsFragment"
+        android:name="ru.agladkov.feature_detail.ReviewsFragment"
+        android:label="ReviewsFragment" />
 </navigation>

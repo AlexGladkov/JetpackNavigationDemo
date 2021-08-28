@@ -9,8 +9,8 @@
         android:name="ru.agladkov.feature_main.MainFragment"
         android:label="MainFragment" >
 
-        <deepLink app:uri="jetnavapp://main" />
-<!--        /{username}/{city}-->
+        <deepLink app:uri="jetnavapp://main/{username}/{city}" />
+
         <argument
             android:name="username"
             app:argType="string" />

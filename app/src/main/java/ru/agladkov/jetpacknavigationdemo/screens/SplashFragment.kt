@@ -36,7 +36,7 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
             navigate(
                 NavCommand(
                     NavCommands.DeepLink(
-                        url = Uri.parse("jetnavapp://main"),
+                        url = Uri.parse("jetnavapp://main/AlexGladkov/Moscow"),
                         isModal = true,
                         isSingleTop = true
                     )
