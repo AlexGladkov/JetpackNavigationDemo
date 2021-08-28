@@ -12,9 +12,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/feature-dashboard" />
             <option value="$PROJECT_DIR$/feature-detail" />
             <option value="$PROJECT_DIR$/feature-login" />
+            <option value="$PROJECT_DIR$/feature-main" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

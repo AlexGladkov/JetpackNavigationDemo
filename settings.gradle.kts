@@ -8,6 +8,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "JetpackNavigationDemo"
 include(":app")
+include(":feature-main")
 include(":feature-login")
-include(":feature-dashboard")
 include(":feature-detail")

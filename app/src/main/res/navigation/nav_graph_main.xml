@@ -18,7 +18,11 @@
         <fragment
             android:id="@+id/detailFragment2"
             android:name="ru.agladkov.jetpacknavigationdemo.screens.DetailFragment"
-            android:label="DetailFragment" />
+            android:label="DetailFragment" >
+            <action
+                android:id="@+id/action_detailFragment2_self"
+                app:destination="@id/detailFragment2" />
+        </fragment>
         <fragment
             android:id="@+id/feedFragment"
             android:name="ru.agladkov.jetpacknavigationdemo.screens.FeedFragment"

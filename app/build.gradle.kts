@@ -37,6 +37,9 @@ android {
 dependencies {
     val navVersion = "2.4.0-alpha04"
 //    val navVersion = "2.3.5" Works only with NavigationExtension
+    implementation(project(":feature-login"))
+    implementation(project(":feature-main"))
+    implementation(project(":feature-detail"))
 
     implementation("androidx.core:core-ktx:1.6.0")
     implementation("androidx.appcompat:appcompat:1.3.0")

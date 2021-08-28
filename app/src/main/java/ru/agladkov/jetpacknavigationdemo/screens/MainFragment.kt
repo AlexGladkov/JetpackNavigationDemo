@@ -2,12 +2,7 @@ package ru.agladkov.jetpacknavigationdemo.screens
 
 import android.os.Bundle
 import android.view.View
-import android.widget.FrameLayout
-import androidx.appcompat.widget.AppCompatTextView
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentContainer
-import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
