@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="ru.agladkov.feature_main.MainFragment"
+        android:label="MainFragment" >
+
+        <deepLink app:uri="jetnavapp://main" />
+<!--        /{username}/{city}-->
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <argument
+            android:name="city"
+            app:argType="string" />
+
+    </fragment>
+</navigation>

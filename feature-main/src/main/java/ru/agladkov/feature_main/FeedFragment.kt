@@ -1,11 +1,11 @@
-package ru.agladkov.jetpacknavigationdemo.screens
+package ru.agladkov.feature_main
 
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import ru.agladkov.jetpacknavigationdemo.R
 
 class FeedFragment: Fragment(R.layout.fragment_feed) {
 
@@ -13,7 +13,7 @@ class FeedFragment: Fragment(R.layout.fragment_feed) {
         super.onViewCreated(view, savedInstanceState)
 
         view.findViewById<TextView>(R.id.feedItemView).setOnClickListener {
-            findNavController().navigate(R.id.action_feedFragment_to_detailFragment2)
+            findNavController().navigate(Uri.parse("jetnavapp://detail"))
         }
     }
 }

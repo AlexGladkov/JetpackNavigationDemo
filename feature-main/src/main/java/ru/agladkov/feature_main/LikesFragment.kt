@@ -1,12 +1,10 @@
-package ru.agladkov.jetpacknavigationdemo.screens
+package ru.agladkov.feature_main
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
-import ru.agladkov.jetpacknavigationdemo.R
 
-class SettingsFragment: Fragment(R.layout.fragment_settings) {
+class LikesFragment: Fragment(R.layout.fragment_likes) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

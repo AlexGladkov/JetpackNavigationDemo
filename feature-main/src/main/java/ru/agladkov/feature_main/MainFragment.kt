@@ -1,14 +1,11 @@
-package ru.agladkov.jetpacknavigationdemo.screens
+package ru.agladkov.feature_main
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
-
 import androidx.navigation.fragment.NavHostFragment
-import ru.agladkov.jetpacknavigationdemo.R
-
 
 class MainFragment: Fragment(R.layout.fragment_main) {
 

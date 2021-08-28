@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    compileSdk = 30
+    compileSdk = 31
 
     defaultConfig {
         applicationId = "ru.agladkov.jetpacknavigationdemo"
         minSdk = 21
-        targetSdk = 30
+        targetSdk = 31
         versionCode = 1
         versionName = "1.0"
 
@@ -35,11 +35,12 @@ android {
 }
 
 dependencies {
-    val navVersion = "2.4.0-alpha04"
+    val navVersion = "2.4.0-alpha07"
 //    val navVersion = "2.3.5" Works only with NavigationExtension
     implementation(project(":feature-login"))
     implementation(project(":feature-main"))
     implementation(project(":feature-detail"))
+    implementation(project(":utils"))
 
     implementation("androidx.core:core-ktx:1.6.0")
     implementation("androidx.appcompat:appcompat:1.3.0")
